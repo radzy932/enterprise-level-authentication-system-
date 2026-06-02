@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+/>
+
+<title>Enterprise Auth System</title>
+
+<link
+rel="stylesheet"
+href="style.css"
+/>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="left-panel">
+
+<h1>Enterprise Auth</h1>
+
+<p>
+Professional Authentication
+System with JWT, RBAC,
+Protected Routes &
+Dashboard Access.
+</p>
+
+</div>
+
+<div class="right-panel">
+
+<div class="card">
+
+<div class="tabs">
+
+<button
+class="tab active"
+onclick="showSignup()"
+id="signupTab"
+>
+Signup
+</button>
+
+<button
+class="tab"
+onclick="showLogin()"
+id="loginTab"
+>
+Login
+</button>
+
+</div>
+
+<div id="signupForm">
+
+<h2>Create Account</h2>
+
+<input
+type="text"
+id="signupName"
+placeholder="Full Name"
+/>
+
+<input
+type="email"
+id="signupEmail"
+placeholder="Email"
+/>
+
+<input
+type="password"
+id="signupPassword"
+placeholder="Password"
+/>
+
+<select id="signupRole">
+
+<option value="user">
+User
+</option>
+
+<option value="admin">
+Admin
+</option>
+
+</select>
+
+<button onclick="signup()">
+Create Account
+</button>
+
+</div>
+
+<div
+id="loginForm"
+style="display:none;"
+>
+
+<h2>Welcome Back</h2>
+
+<input
+type="email"
+id="loginEmail"
+placeholder="Email"
+/>
+
+<input
+type="password"
+id="loginPassword"
+placeholder="Password"
+/>
+
+<button onclick="login()">
+Login
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
